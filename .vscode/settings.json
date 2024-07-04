@@ -1,0 +1,40 @@
+{
+    "python.languageServer": "Pylance",
+    "python.analysis.autoSearchPaths": true,
+    "python.analysis.autoImportCompletions": true,
+    "code-runner.ignoreSelection": true,
+    "code-runner.runInTerminal": true,
+    "python.linting.mypyEnabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.formatting.provider": "black",
+    "python.formatting.blackPath": ".venv/bin/blue",
+    "python.testing.unittestEnabled": true,
+    "code-runner.executorMap": {
+        "python": ".venv/bin/python",
+    },
+    "editor.formatOnSave": true,
+    "python.linting.flake8Args": [
+        "--max-line-length=79"
+    ],
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "explorerExclude.backup": null,
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./test",
+        "-p",
+        "*_test.py"
+    ],
+    "python.testing.pytestEnabled": false
+}

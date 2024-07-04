@@ -1,0 +1,7 @@
+google-auth 
+google-auth-oauthlib 
+google-auth-httplib2 
+google-api-python-client
+werkzeug==2.2.2
+Flask
+Flask-OAuthlib

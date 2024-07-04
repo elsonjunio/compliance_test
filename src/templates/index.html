@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Compliance Checker</title>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id"
+        content="40785923450-1cbfcsqh8cmk322si49ab6vcisb10pef.apps.googleusercontent.com">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <h1>Compliance Checker</h1>
+    <a href="{{ url_for('login') }}">Login with Google</a>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+</body>
+
+</html>
