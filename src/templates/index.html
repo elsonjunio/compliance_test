@@ -5,8 +5,18 @@
     <title>Compliance Checker</title>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <meta name="google-signin-client_id"
-        content="40785923450-1cbfcsqh8cmk322si49ab6vcisb10pef.apps.googleusercontent.com">
+        content="656583388365-qqbsrkp5glt02b5mvbjoe5he8o7qheff.apps.googleusercontent.com">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <script>
+        function onSignIn(googleUser) {
+            var profile = googleUser.getBasicProfile();
+            console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+            console.log('Name: ' + profile.getName());
+            console.log('Image URL: ' + profile.getImageUrl());
+            console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+        }
+
+    </script>
 </head>
 
 <body>
